@@ -17,4 +17,19 @@ public class UserServiceImpl implements IUserService {
     public List<UserDTO> findAll() {
         return client.getUsers();
     }
+
+    @Override
+    public UserDTO save(UserDTO user) {
+        return client.saveUser(user);
+    }
+
+    @Override
+    public UserDTO update(Integer id, UserDTO user) {
+        return client.updateUser(id, user);
+    }
+
+    @Override
+    public void delete(Integer id) {
+        client.deleteUser(id);
+    }
 }
