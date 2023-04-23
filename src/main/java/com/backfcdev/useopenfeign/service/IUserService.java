@@ -8,4 +8,5 @@ public interface IUserService {
     List<UserDTO> findAll();
     UserDTO save(UserDTO user);
     UserDTO update(Integer id, UserDTO user);
+    void delete(Integer id);
 }
