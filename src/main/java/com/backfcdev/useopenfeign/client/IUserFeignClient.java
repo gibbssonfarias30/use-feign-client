@@ -20,6 +20,6 @@ public interface IUserFeignClient {
     UserDTO updateUser(@PathVariable Integer id, @RequestBody UserDTO user);
 
     @DeleteMapping(value = "/users/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    UserDTO deleteUser(@PathVariable Integer id);
+    void deleteUser(@PathVariable Integer id);
 
 }
